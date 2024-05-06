@@ -3,7 +3,7 @@
  * @description: It Contain db setup function.
  * @author: Sandip Vaghasiya
  */
-
+require("dotenv").config({ path: ".env" });
 import mongoose from "mongoose";
 
 /* development connection string */

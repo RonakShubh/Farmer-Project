@@ -4,6 +4,7 @@
  * @author: Sandip Vaghasiya
  */
 
+require("dotenv").config({ path: ".env" });
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -13,7 +14,6 @@ import db from "./db";
 import swaggerJsDocsWeb from "./config/swagger/swagger-config-web";
 import logger from "morgan";
 import { failAction } from "./utilities/response";
-require("dotenv").config({ path: ".env" });
 
 /**Start import routes */
 import webRoutes from "./api/v1/web";
